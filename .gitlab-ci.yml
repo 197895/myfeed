@@ -1,0 +1,49 @@
+include:
+  - project: "vincenttunru/ci-templates"
+    file: "/npm-node12.gitlab-ci.yml"
+
+image: node:14
+
+build:
+  stage: build
+  script:
+    - npm ci
+    - npm run build
+
+build_website:
+  image: node:20
+  stage: build
+  script:
+    - cd website
+    - npm ci
+    - npm run build
+  artifacts:
+    paths:
+      - website/node_modules
+      - website/build
+
+test:
+  image: mcr.microsoft.com/playwright
+  stage: test
+  dependencies:
+    - build
+  script:
+    # Explicitly install Playwright to run the postinstall script
+    # to download Firefox - it's not included in the previous job's artefacts.
+    - npm install playwright-firefox
+    - npx playwright install
+    - npm test
+
+deploy_website:
+  image: python:3
+  stage: release
+  dependencies:
+    - build_website
+  script:
+    - export BUCKET="s3://$CI_PROJECT_NAME.vincenttunru.com"
+    - pip3 install awscli --upgrade
+    - aws s3 website $BUCKET --index-document index.html --error-document index.html
+    - aws s3 sync website/build $BUCKET
+  only:
+    - master
+    - main
