@@ -1,0 +1,43 @@
+name: Update RSS Feeds
+
+# 1. 触发机制
+on:
+  # 允许手动点击按钮运行
+  workflow_dispatch:
+  # 定时任务：每天国际时间 0点和12点运行 (对应北京时间 8点和20点)
+  schedule:
+    - cron: '0 0,12 * * *'
+
+# 2. 权限设置：允许修改仓库内容 (为了发布 Pages)
+permissions:
+  contents: write
+
+# 3. 任务流程
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 第一步：把代码下载下来
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 第二步：准备 Node.js 环境
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      # 第三步：安装 feed-me-up-scotty 工具
+      - name: Install tool
+        run: npm install -g feed-me-up-scotty
+
+      # 第四步：运行抓取 (它会读取你的 feeds.toml)
+      - name: Generate feeds
+        run: feed-me-up-scotty
+
+      # 第五步：把生成的 public 文件夹发布到 gh-pages 分支
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
