@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.sii.edu.cn/zsgz/list.htm</id>
     <title>上海创智学院 - 招生培养</title>
-    <updated>2026-04-29T02:45:21.728Z</updated>
+    <updated>2026-04-29T13:51:57.464Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://www.sii.edu.cn/zsgz/favicon.ico</icon>
     <entry>
@@ -11,6 +11,24 @@
         <link href="https://www.sii.edu.cn/yw/list.htm"/>
         <updated>2025-12-07T09:50:49.929Z</updated>
         <content type="html"><![CDATA[<a href="/yw/list.htm" target="_self">英文</a>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[上海创智学院 2026 年夏令营报名考核及入营相关时间安排]]></title>
+        <id>https://www.sii.edu.cn/2026/0429/c24a948/page.htm</id>
+        <link href="https://www.sii.edu.cn/2026/0429/c24a948/page.htm"/>
+        <updated>2026-04-29T13:51:56.770Z</updated>
+        <content type="html"><![CDATA[<a href="/2026/0429/c24a948/page.htm" target="_blank">
+                                        <div class="news_date">
+                                            <div class="news_day">2026</div>
+                                            <div class="news_month">04<span>/</span>29</div>
+
+                                        </div>
+                                        <div class="news_wz">
+                                            <div class="news_title line1">上海创智学院 2026 年夏令营报名考核及入营相关时间安排</div>
+                                            <div class="news_text line1"></div>
+                                        </div>
+                                        <img src="/_upload/tpl/00/09/9/template9/images/more3.svg" alt="">
+                                    </a>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[上海创智学院 2026 年春季营拟录取名单公示]]></title>
@@ -49,26 +67,18 @@
                                     </a>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[3]]></title>
-        <id>https://www.sii.edu.cn/zsgz/list.htm</id>
-        <link href="https://www.sii.edu.cn/zsgz/list.htm"/>
-        <updated>2026-04-29T02:45:20.945Z</updated>
-        <content type="html"><![CDATA[<a class="news_icon"></a>
-                                    <div class="imgs"><img src="/_upload/article/images/d7/33/cc3d49884dd9972397f30b11327e/1929fcba-0a89-4efc-8514-d78842ede2bb.jpg" alt=""></div>]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[4]]></title>
         <id>https://www.sii.edu.cn/zsgz/list.htm</id>
         <link href="https://www.sii.edu.cn/zsgz/list.htm"/>
-        <updated>2026-04-29T02:45:20.946Z</updated>
+        <updated>2026-04-29T13:51:56.760Z</updated>
         <content type="html"><![CDATA[<a class="news_icon"></a>
-                                    <div class="imgs"><img src="" alt=""></div>]]></content>
+                                    <div class="imgs"><img src="/_upload/article/images/d7/33/cc3d49884dd9972397f30b11327e/1929fcba-0a89-4efc-8514-d78842ede2bb.jpg" alt=""></div>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[5]]></title>
         <id>https://www.sii.edu.cn/zsgz/list.htm</id>
         <link href="https://www.sii.edu.cn/zsgz/list.htm"/>
-        <updated>2026-04-29T02:45:20.948Z</updated>
+        <updated>2026-04-29T13:51:56.760Z</updated>
         <content type="html"><![CDATA[<a class="news_icon"></a>
                                     <div class="imgs"><img src="" alt=""></div>]]></content>
     </entry>
@@ -76,7 +86,15 @@
         <title type="html"><![CDATA[6]]></title>
         <id>https://www.sii.edu.cn/zsgz/list.htm</id>
         <link href="https://www.sii.edu.cn/zsgz/list.htm"/>
-        <updated>2026-04-29T02:45:20.949Z</updated>
+        <updated>2026-04-29T13:51:56.761Z</updated>
+        <content type="html"><![CDATA[<a class="news_icon"></a>
+                                    <div class="imgs"><img src="" alt=""></div>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[7]]></title>
+        <id>https://www.sii.edu.cn/zsgz/list.htm</id>
+        <link href="https://www.sii.edu.cn/zsgz/list.htm"/>
+        <updated>2026-04-29T13:51:56.767Z</updated>
         <content type="html"><![CDATA[<a class="news_icon"></a>
                                     <div class="imgs"><img src="" alt=""></div>]]></content>
     </entry>
